@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{03D4BEEB-4A1F-432F-870C-D52BC474A02A}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="th-poker-api/Common/APIKey.cs">
+    <Files>
+      <File FileName="th-poker-api/Services/HistoryService/HistoryService.cs" Line="87" Column="40" />
+      <File FileName="th-poker-api/Model/Data/DataContext.cs" Line="877" Column="29" />
+      <File FileName="th-poker-api/Model/Game/MDGames.cs" Line="10" Column="52" />
+      <File FileName="th-poker-api/DTO/History/responseGameH.cs" Line="5" Column="47" />
+      <File FileName="th-poker-api/Common/APIKey.cs" Line="9" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="th-poker-api" expanded="True">
+            <Node name="th-poker-api" expanded="True">
+              <Node name="Common" expanded="True">
+                <Node name="APIKey.cs" selected="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="DTO" expanded="True">
+                <Node name="Game" expanded="True" />
+                <Node name="History" expanded="True" />
+              </Node>
+              <Node name="Model" expanded="True">
+                <Node name="Data" expanded="True" />
+                <Node name="Game" expanded="True" />
+                <Node name="Room" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True">
+                <Node name="AuthService" expanded="True" />
+                <Node name="GameplayService" expanded="True" />
+                <Node name="HistoryService" expanded="True" />
+                <Node name="UserService" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.th-poker-api PreferredExecutionTarget="/Applications/Firefox.app" />
+</Properties>

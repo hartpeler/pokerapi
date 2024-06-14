@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>F:\Compile API</_PublishTargetUrl>
+    <History>True|2022-12-07T07:55:54.5949952Z;True|2022-12-07T14:55:43.9947057+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Model/Purchase/MDPaymentItem.cs">
+      <publishTime>01/26/2023 11:34:18</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
