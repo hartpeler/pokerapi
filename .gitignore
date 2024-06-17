@@ -40,7 +40,6 @@ th-poker-api/obj/Release/net6.0/refint/th-poker-api.dll
 .vs/th-poker-api/xs/project-cache/th-poker-api-Release.json
 th-poker-api/bin/Release/net6.0/th-poker-api
 th-poker-api/bin/Release/net6.0/th-poker-api.deps.json
-th-poker-api/Common/DatabaseConnection.cs
 th-poker-api/obj/Debug/net6.0/project.razor.json
 th-poker-api/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.th-poker-api.props
 th-poker-api/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.th-poker-api.props

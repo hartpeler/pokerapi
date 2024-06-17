@@ -18,12 +18,13 @@ namespace th_poker_api.Data
     public class DataContext : DbContext
     {
 
-        
+        DatabaseConnection dc = new DatabaseConnection();
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
             optionsBuilder
-                .UseSqlServer("Server=tcp:perpusku.database.windows.net,1433;Initial Catalog=db-poker;Persist Security Info=False;User ID=perpusadmin;Password=Nander81;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30");
+                .UseSqlServer(dc.dataBase);
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
