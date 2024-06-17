@@ -1,0 +1,49 @@
+# azure-pipelines.yml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+  solution: '**/*.sln'
+  project: 'path/to/your/project.csproj'
+  artifactName: 'drop'
+
+steps:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '6.0.x' # Specify the .NET SDK version you are using
+    installationPath: $(Agent.ToolsDirectory)/dotnet
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: '$(solution)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    projects: '$(solution)'
+    arguments: '--configuration $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    projects: '$(project)'
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(artifactName)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(artifactName)'
+    ArtifactName: '$(artifactName)'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'grand-poker' # Name of the service connection
+    appType: 'webAppLinux' # Since we are using Linux
+    appName: 'grand-poker' # Name of your App Service
+    package: '$(Build.ArtifactStagingDirectory)/$(artifactName)/*.zip' # Path to the ZIP file containing the published app
