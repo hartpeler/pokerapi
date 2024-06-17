@@ -45,5 +45,5 @@ steps:
   inputs:
     azureSubscription: 'grand-poker' # Name of the service connection
     appType: 'webAppLinux' # Since we are using Linux
-    appName: 'grand-poker' # Name of your App Service
+    appName: 'grand-poker-api' # Name of your App Service
     package: '$(Build.ArtifactStagingDirectory)/$(artifactName)/*.zip' # Path to the ZIP file containing the published app
