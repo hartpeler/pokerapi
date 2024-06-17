@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("th-poker-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e320871a93660bf0c3ac3944f63faf644d8a34cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("th-poker-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("th-poker-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
